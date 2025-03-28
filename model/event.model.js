@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const { bdd } = require("./../framework/connexion.js");
 
-const Event = bdd.define("event", {
+const Event = bdd.define("events", {
   name: {
     type: DataTypes.STRING(255),
     allowNull: false,
