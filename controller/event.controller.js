@@ -10,3 +10,8 @@ exports.getById = async (req, res, next) => {
   let event = await Event.findByPk(id);
   res.status(201).json(event);
 };
+
+exports.getAll = async (req, res, next) {
+    let event = await Event.findAll();
+    res.status(201).json(event);
+}
