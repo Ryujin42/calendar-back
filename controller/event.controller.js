@@ -11,7 +11,7 @@ exports.getById = async (req, res, next) => {
   res.status(201).json(event);
 };
 
-exports.getAll = async (req, res, next) {
+exports.getAll = async (req, res, next) => {
     let event = await Event.findAll();
     res.status(201).json(event);
 }
